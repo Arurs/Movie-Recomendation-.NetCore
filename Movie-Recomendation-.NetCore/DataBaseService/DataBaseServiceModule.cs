@@ -18,7 +18,8 @@ namespace DataBaseService
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.Register<IMovieRepository, MovieRepository>();
-            //throw new NotImplementedException();
+            containerRegistry.Register<IUserRepository, UserRepository>();
+            containerRegistry.Register<IRatingRepository, RatingRepository>();
         }
     }
 }
