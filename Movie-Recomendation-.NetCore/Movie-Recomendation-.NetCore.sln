@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBaseService", "DataBaseService\DataBaseService.csproj", "{FCD12086-7838-4123-AEB4-0D7222B45BFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "movieRecomendation", "movieRecomendation\movieRecomendation.csproj", "{8022E6F2-7D13-4911-9027-8502A7046B99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FCD12086-7838-4123-AEB4-0D7222B45BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCD12086-7838-4123-AEB4-0D7222B45BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCD12086-7838-4123-AEB4-0D7222B45BFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8022E6F2-7D13-4911-9027-8502A7046B99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8022E6F2-7D13-4911-9027-8502A7046B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8022E6F2-7D13-4911-9027-8502A7046B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8022E6F2-7D13-4911-9027-8502A7046B99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
