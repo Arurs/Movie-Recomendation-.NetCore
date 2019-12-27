@@ -33,6 +33,7 @@ namespace DataBaseService.Repository
             using (var db = new MovieRecomendationContext())
             {
                 db.Update(movie);
+                db.SaveChanges();
             }
         }
     }
