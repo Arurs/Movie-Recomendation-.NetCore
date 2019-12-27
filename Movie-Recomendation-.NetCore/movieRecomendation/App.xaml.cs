@@ -1,5 +1,7 @@
 ﻿using CommonServiceLocator;
 using DataBaseService;
+using DataBaseService.Repository;
+using movieRecomendation.DataPreparation;
 using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Unity;
@@ -29,14 +31,20 @@ namespace movieRecomendation
 
             base.InitializeShell(shell);
             shell.Show();
-
+            _cos();
         }
-
+        private void _cos()
+        {
+            //Datapreparator dataPreparator = Container.Resolve<Datapreparator>();
+            //dataPreparator.Prepare();
+            Datapreparator datapreparator = new Datapreparator(new MovieRepository());
+            datapreparator.Prepare();
+        }
         protected override void RegisterTypes(
             IContainerRegistry containerRegistry
         )
         {
-
+            containerRegistry.Register<IDataPreparator, Datapreparator>();
         }
 
         protected override void ConfigureModuleCatalog(

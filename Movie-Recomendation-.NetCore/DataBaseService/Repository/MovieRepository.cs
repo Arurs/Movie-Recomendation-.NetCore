@@ -8,6 +8,10 @@ namespace DataBaseService.Repository
 {
     public class MovieRepository : IMovieRepository
     {
+        public MovieRepository()
+        {
+
+        }
         public void Add(Movie movie)
         {
             using (var db = new MovieRecomendationContext())
